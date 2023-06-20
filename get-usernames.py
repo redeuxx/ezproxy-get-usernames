@@ -3,7 +3,8 @@ import glob
 import os
 
 DIRNAME = "logs"
-REGEX = r"\b[a-zA-Z]{4,10}\d{2}\b" # Edit this regex for the pattern you want to look for, this default looks for letters 4-10 long followed by 2 digits
+REGEX = r"\b[a-zA-Z]{4,10}\d{2}\b" # Edit this regex for the pattern you want to look for,
+                                   # this default looks for letters 4-10 long followed by 2 digits
 
 
 # create csv file with headings, logfile name, and username
@@ -32,3 +33,4 @@ for filename in glob.glob(
     for username in username_list:
         FINAL_USERNAME_LIST += username + " "
     outfile.write("," + FINAL_USERNAME_LIST)
+    
